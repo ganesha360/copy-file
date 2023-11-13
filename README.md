@@ -18,47 +18,23 @@ Giving condition for files
 ### Step 6: 
 Getting statement from the user to print or not want to print
 ## PROGRAM:
-```
-#Developed by : Ganesh 
-#Reg no : 22009090
-import sys
-count=0
-with open(sys.argv[1],'r') as f:
- for line in f:
- word=line.split()
- count+=len(word)
-print("Word Count in File=",count)
-from shutil import copyfile
-from sys import exit
-source = input("Enter source file with full path: ")
-target = input("Enter target file with full path: ")
-# adding exception handling
-try:
- copyfile(source, target)
-except IOError as e:
- print("Unable to copy file. %s" % e)
- exit(1)
-except:
- print("Unexpected error:", sys.exc_info())
- exit(1)
-print("\nFile copy done!\n")
-while True:
- print("Do you like to print the file ? (y/n): ")
- check = input()
- if check == 'n':
- break
- elif check == 'y':
- file = open(target, "r")
- print("\nHere follows the file content:\n")
- print(file.read())
- file.close()
- print()
- break
- else:
- continue
+```PYTHON
+#Program to read contents from a CSV file.
+#Developed by: GANESH R
+#RegisterNumber:212222240029
+
+import pandas as pd
+df=pd.read_csv("NBA.csv")
+print(df.head(10))
+print(df.tail())
+print(" rows",df.axes[0])
+print(" columns",df.axes[1])
+print("no of rows",len(df.axes[0]))
+print("no of columns",len(df.axes[0]))
 ```
 ### OUTPUT:
-![output](./WhatsApp%20Image%202023-01-26%20at%2011.12.56.jpg)
+![py1](https://github.com/ganesha360/copy-file/assets/120884552/eda02f53-7eb4-4987-83c9-765754acd6ae)
+
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
