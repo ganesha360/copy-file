@@ -19,21 +19,17 @@ Giving condition for files
 Getting statement from the user to print or not want to print
 ## PROGRAM:
 ```PYTHON
-#Program to read contents from a CSV file.
-#Developed by: GANESH R
-#RegisterNumber:212222240029
+Program for copying the contents from one file to another file
+Developed by: GANESH R
+RegisterNumber: 212222240029
 
-import pandas as pd
-df=pd.read_csv("NBA.csv")
-print(df.head(10))
-print(df.tail())
-print(" rows",df.axes[0])
-print(" columns",df.axes[1])
-print("no of rows",len(df.axes[0]))
-print("no of columns",len(df.axes[0]))
+with open("text1.txt",'r') as fp:
+    msg1=fp.read()
+with open("copytxt",'w') as fp1:
+    fp1.write(msg1)
 ```
 ### OUTPUT:
-![py1](https://github.com/ganesha360/copy-file/assets/120884552/eda02f53-7eb4-4987-83c9-765754acd6ae)
+![PY2](https://github.com/ganesha360/copy-file/assets/120884552/4c987e88-67a3-4020-ac4f-da5ba1229729)
 
 
 ## RESULT:
