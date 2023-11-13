@@ -29,6 +29,11 @@ with open("copytxt",'w') as fp1:
     fp1.write(msg1)
 ```
 ### OUTPUT:
+
+![PY3](https://github.com/ganesha360/copy-file/assets/120884552/355687dc-40c9-47bc-b946-c6bcb26f2e3a)
+![PY4](https://github.com/ganesha360/copy-file/assets/120884552/b7e976ff-a8da-44f2-b68a-e138b3ec721e)
+
+
 ![PY2](https://github.com/ganesha360/copy-file/assets/120884552/4c987e88-67a3-4020-ac4f-da5ba1229729)
 
 
